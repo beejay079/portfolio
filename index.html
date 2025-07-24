@@ -2,348 +2,18 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="description" content="Portfolio of Abdulhameed Fawas Jayeola, Full Stack Developer with 2+ years of experience in web development.">
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="./Css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Dev – Portfolio of Abdulhameed Fawas Jayeola</title>
+    <!-- Bootstrap 5 CSS -->
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
     <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <title>Portfolio</title>
-    <style>
-        /* Main CSS for Portfolio Website */
-:root {
-  --primary: #0a192f; /* Dark Navy */
-  --secondary: #64ffda; /* Aqua Green */
-  --accent: #8892b0; /* Soft Gray-Blue */
-  --background: #020c1b; /* Dark Background */
-  --text: #ccd6f6; /* Light Text */
-  --dark-text: #8892b0; /* Secondary Text */
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Roboto", sans-serif;
-  background: var(--background);
-  color: var(--text);
-  overflow-x: hidden;
-}
-
-.navbar {
-  background: rgba(10, 25, 47, 0.95);
-  backdrop-filter: blur(10px);
-  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
-}
-
-.navbar-brand {
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  color: var(--secondary);
-}
-
-.nav-link {
-  font-weight: 500;
-  color: var(--text);
-  transition: all 0.3s ease;
-  margin: 0 10px;
-}
-
-.nav-link:hover {
-  color: var(--secondary);
-  transform: translateY(-2px);
-}
-
-.hero-section {
-  min-height: 100vh;
-  background: linear-gradient(rgba(2, 12, 27, 0.8), rgba(2, 12, 27, 0.8)),
-    url("https://picsum.photos/seed/developer/1920/1080.jpg");
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  position: relative;
-  overflow: hidden;
-}
-
-.hero-content {
-  z-index: 2;
-}
-
-.hero-title {
-  font-family: "Poppins", sans-serif;
-  font-size: 4rem;
-  font-weight: 700;
-  background: linear-gradient(45deg, var(--secondary), #8892b0);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin-bottom: 20px;
-}
-
-.hero-subtitle {
-  font-size: 1.5rem;
-  color: var(--accent);
-  margin-bottom: 30px;
-}
-
-.btn-primary {
-  background: linear-gradient(45deg, var(--secondary), #8892b0);
-  border: none;
-  padding: 12px 30px;
-  border-radius: 50px;
-  font-weight: 600;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(100, 255, 218, 0.3);
-  color: var(--primary);
-}
-
-.btn-primary:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 20px rgba(100, 255, 218, 0.4);
-  background: linear-gradient(45deg, #8892b0, var(--secondary));
-}
-
-.btn-outline {
-  background: transparent;
-  border: 2px solid var(--accent);
-  color: var(--text);
-  padding: 12px 30px;
-  border-radius: 50px;
-  font-weight: 600;
-  transition: all 0.3s ease;
-}
-
-.btn-outline:hover {
-  background: var(--accent);
-  color: var(--primary);
-  transform: translateY(-3px);
-}
-
-.section-title {
-  font-family: "Poppins", sans-serif;
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 50px;
-  text-align: center;
-  position: relative;
-  color: var(--text);
-}
-
-.section-title::after {
-  content: "";
-  position: absolute;
-  bottom: -15px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 80px;
-  height: 4px;
-  background: linear-gradient(45deg, var(--secondary), #8892b0);
-  border-radius: 2px;
-}
-
-.about-section {
-  background: var(--primary);
-  padding: 100px 0;
-}
-
-.skill-item {
-  background: rgba(10, 25, 47, 0.7);
-  border-radius: 15px;
-  padding: 20px;
-  margin-bottom: 20px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  transition: all 0.3s ease;
-  border: 1px solid rgba(136, 146, 176, 0.2);
-}
-
-.skill-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
-  border-color: var(--secondary);
-}
-
-.skill-icon {
-  font-size: 2.5rem;
-  color: var(--secondary);
-  margin-bottom: 15px;
-}
-
-.projects-section {
-  padding: 100px 0;
-  background: var(--background);
-}
-
-.project-card {
-  background: var(--primary);
-  border-radius: 20px;
-  overflow: hidden;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  transition: all 0.3s ease;
-  height: 100%;
-  border: 1px solid rgba(136, 146, 176, 0.2);
-}
-
-.project-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
-  border-color: var(--secondary);
-}
-
-.project-img {
-  height: 200px;
-  object-fit: cover;
-  width: 100%;
-}
-
-.project-tech {
-  display: inline-block;
-  background: rgba(136, 146, 176, 0.2);
-  color: var(--secondary);
-  padding: 5px 15px;
-  border-radius: 50px;
-  font-size: 0.8rem;
-  margin: 5px;
-  font-weight: 500;
-  border: 1px solid rgba(136, 146, 176, 0.3);
-}
-
-.project-tech:hover {
-  background: var(--secondary);
-  color: var(--primary);
-}
-
-.contact-section {
-  background: linear-gradient(
-    135deg,
-    var(--primary) 0%,
-    var(--background) 100%
-  );
-  padding: 100px 0;
-  color: var(--text);
-}
-
-.contact-form {
-  background: rgba(10, 25, 47, 0.7);
-  backdrop-filter: blur(10px);
-  padding: 40px;
-  border-radius: 20px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-  border: 1px solid rgba(136, 146, 176, 0.2);
-}
-
-.form-control {
-  background: rgba(2, 12, 27, 0.7);
-  border: 1px solid rgba(136, 146, 176, 0.3);
-  padding: 15px;
-  border-radius: 10px;
-  margin-bottom: 20px;
-  color: var(--text);
-}
-
-.form-control:focus {
-  background: rgba(2, 12, 27, 0.9);
-  border-color: var(--secondary);
-  box-shadow: 0 0 0 0.25rem rgba(100, 255, 218, 0.25);
-  color: var(--text);
-}
-
-.form-control::placeholder {
-  color: var(--accent);
-}
-
-.social-icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 50px;
-  height: 50px;
-  background: rgba(136, 146, 176, 0.2);
-  border-radius: 50%;
-  margin: 0 10px;
-  font-size: 1.5rem;
-  color: var(--secondary);
-  transition: all 0.3s ease;
-  border: 1px solid rgba(136, 146, 176, 0.3);
-}
-
-.social-icon:hover {
-  background: var(--secondary);
-  color: var(--primary);
-  transform: translateY(-5px);
-}
-
-.map-container {
-  height: 300px;
-  border-radius: 20px;
-  overflow: hidden;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-  border: 1px solid rgba(136, 146, 176, 0.2);
-}
-
-.footer {
-  background: var(--primary);
-  color: var(--accent);
-  padding: 40px 0;
-  text-align: center;
-  border-top: 1px solid rgba(136, 146, 176, 0.2);
-}
-
-.floating-particles {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  z-index: 1;
-}
-
-.particle {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  background: rgba(100, 255, 218, 0.1);
-  border-radius: 50%;
-  animation: float 6s ease-in-out infinite;
-}
-
-@keyframes float {
-  0%,
-  100% {
-    transform: translateY(0px) rotate(0deg);
-  }
-  50% {
-    transform: translateY(-20px) rotate(180deg);
-  }
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .hero-title {
-    font-size: 2.5rem;
-  }
-
-  .hero-subtitle {
-    font-size: 1.2rem;
-  }
-
-  .section-title {
-    font-size: 2rem;
-  }
-
-  .contact-form {
-    padding: 20px;
-  }
-}
-
-    </style>
+    <link
+      rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@300;400;600;700&display=swap"rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./Css/main.css" />
   </head>
   <body>
     <!-- Navigation -->
@@ -397,7 +67,7 @@ body {
           <div class="col-lg-8 mx-auto text-center">
             <h1 class="hero-title">Abdulhameed Fawas Jayeola</h1>
             <p class="hero-subtitle">
-              Full Stack Developer with 2+ years of professional experience
+              Full Stack Developer | 2+ Years Experience
             </p>
             <a href="#projects" class="btn btn-primary btn-lg">View My Work</a>
             <a href="#contact" class="btn btn-outline btn-lg ms-3">Hire Me</a>
@@ -416,7 +86,7 @@ body {
               <h3 class="mb-3">Experienced Full Stack Developer</h3>
               <p class="lead">
                 With over 2 years of professional experience in web development,
-                I, <b>Abdulhameed Fawas Jayeola</b>, have built robust, scalable
+                I, Abdulhameed Fawas Jayeola, have built robust, scalable
                 applications for clients across various industries.
               </p>
               <p>
@@ -542,23 +212,23 @@ body {
           <div class="col-lg-4 col-md-6">
             <div class="project-card">
               <img
-                src="https://picsum.photos/seed/dashboard/600/400.jpg"
-                alt="Admin Dashboard"
+                src="./img/med.png"
+                alt="Medilab Project"
                 class="project-img" />
               <div class="p-4">
-                <h4>Admin Dashboard</h4>
+                <h4>Medilab Project</h4>
                 <p>
-                  Interactive dashboard with real-time analytics, user
-                  management, and reporting tools.
+                  A medical website provides reliable health information, services, and tools to support patient care, education.
                 </p>
                 <div class="mb-3">
-                  <span class="project-tech">JavaScript</span>
+                  <span class="project-tech">HTML5</span>
+                  <span class="project-tech">CSS</span>
                   <span class="project-tech">Bootstrap</span>
-                  <span class="project-tech">Chart.js</span>
+                  <span class="project-tech">JavaScript</span>
                 </div>
                 <div class="d-flex gap-2">
-                  <a href="#" class="btn btn-sm btn-primary">Live Demo</a>
-                  <a href="#" class="btn btn-sm btn-outline-dark">GitHub</a>
+                  <a href="https://beejay079.github.io/Medilab/" class="btn btn-sm btn-primary">Live Demo</a>
+                  <a href="./img/med.png" class="btn btn-sm btn-primary">View</a>
                 </div>
               </div>
             </div>
@@ -568,23 +238,23 @@ body {
           <div class="col-lg-4 col-md-6">
             <div class="project-card">
               <img
-                src="https://picsum.photos/seed/mobileapp/600/400.jpg"
-                alt="Mobile App"
+                src="./img/iland.png"
+                alt="Ilanding Project"
                 class="project-img" />
               <div class="p-4">
-                <h4>Mobile App</h4>
+                <h4>Ilanding Project</h4>
                 <p>
-                  Cross-platform mobile application for task management with
-                  offline capabilities.
+                  iLanding is a smart website builder that helps users create fast, responsive, and professional landing pages
                 </p>
                 <div class="mb-3">
-                  <span class="project-tech">React Native</span>
-                  <span class="project-tech">Firebase</span>
-                  <span class="project-tech">Redux</span>
+                  <span class="project-tech">HTML5</span>
+                  <span class="project-tech">CSS</span>
+                  <span class="project-tech">Bootstrap</span>
+                  <span class="project-tech">JavaScript</span>
                 </div>
                 <div class="d-flex gap-2">
-                  <a href="#" class="btn btn-sm btn-primary">Live Demo</a>
-                  <a href="#" class="btn btn-sm btn-outline-dark">GitHub</a>
+                  <a href="https://beejay079.github.io/Ilanding/" class="btn btn-sm btn-primary">Live Demo</a>
+                  <a href="./img/iland.png" class="btn btn-sm btn-primary">View</a>
                 </div>
               </div>
             </div>
@@ -594,165 +264,172 @@ body {
           <div class="col-lg-4 col-md-6">
             <div class="project-card">
               <img
-                src="https://picsum.photos/seed/blog/600/400.jpg"
-                alt="Blog Platform"
+                src="./img/quiz.png"
+                alt="Quiz App"
                 class="project-img" />
               <div class="p-4">
-                <h4>Blog Platform</h4>
+                <h4>Quiz App</h4>
                 <p>
-                  Content management system with rich text editing and user
+                  Interactive quiz application with real-time feedback and user authentication.
                   authentication.
                 </p>
                 <div class="mb-3">
-                  <span class="project-tech">Express.js</span>
-                  <span class="project-tech">MongoDB</span>
-                  <span class="project-tech">EJS</span>
+                  <span class="project-tech">HTML5</span>
+                  <span class="project-tech">CSS</span>
+                  <span class="project-tech">Bootstrap</span>
+                  <span class="project-tech">JavaScript</span>
                 </div>
                 <div class="d-flex gap-2">
-                  <a href="#" class="btn btn-sm btn-primary">Live Demo</a>
-                  <a href="#" class="btn btn-sm btn-outline-dark">GitHub</a>
+                  <a href="https://beejay079.github.io/Quiz-/" class="btn btn-sm btn-primary">Live Demo</a>
+                  <a href="./img/quiz.png" class="btn btn-sm btn-primary">View</a>
                 </div>
               </div>
             </div>
           </div>
 
           <!-- Project 5 -->
-          <div class="col-lg-4 col-md-6">
+           <div class="col-lg-4 col-md-6">
             <div class="project-card">
               <img
-                src="https://picsum.photos/seed/booking/600/400.jpg"
-                alt="Booking System"
+                src=" ./img/cal.png"
+                alt="Scientific Calculator"
                 class="project-img" />
               <div class="p-4">
-                <h4>Booking System</h4>
+                <h4>Calculator Scientific</h4>
                 <p>
-                  Online reservation system with calendar integration and
-                  payment processing.
+                  A scientific calculator with advanced mathematical and logical functions.
                 </p>
                 <div class="mb-3">
-                  <span class="project-tech">Vue.js</span>
-                  <span class="project-tech">Node.js</span>
-                  <span class="project-tech">PostgreSQL</span>
+                  <span class="project-tech">HTML5</span>
+                  <span class="project-tech">CSS</span>
+                  <span class="project-tech">Bootstrap</span>
+                  <span class="project-tech">JavaScript</span>
                 </div>
                 <div class="d-flex gap-2">
-                  <a href="#" class="btn btn-sm btn-primary">Live Demo</a>
-                  <a href="#" class="btn btn-sm btn-outline-dark">GitHub</a>
+                  <a href="https://beejay079.github.io/Calculator/" class="btn btn-sm btn-primary">Live Demo</a>
+                  <a href="./img/cal.png" class="btn btn-sm btn-primary">View</a>
                 </div>
               </div>
             </div>
           </div>
-
+          
           <!-- Project 6 -->
           <div class="col-lg-4 col-md-6">
             <div class="project-card">
               <img
-                src="https://picsum.photos/seed/social/600/400.jpg"
-                alt="Social Network"
+                src="./img/path.png"
+                alt="Pathfinder"
                 class="project-img" />
               <div class="p-4">
-                <h4>Social Network</h4>
+                <h4>Pathfinder</h4>
                 <p>
-                  Community platform with real-time messaging and user profiles.
+                    Online reservation system featuring calendar integration, real-time availability, and secure payment processing.
                 </p>
                 <div class="mb-3">
-                  <span class="project-tech">React</span>
-                  <span class="project-tech">Socket.io</span>
-                  <span class="project-tech">Express</span>
+                  <span class="project-tech">HTML5</span>
+                  <span class="project-tech">CSS</span>
+                  <span class="project-tech">Bootstrap</span>
+                  <span class="project-tech">JavaScript</span>
                 </div>
                 <div class="d-flex gap-2">
-                  <a href="#" class="btn btn-sm btn-primary">Live Demo</a>
-                  <a href="#" class="btn btn-sm btn-outline-dark">GitHub</a>
+                  <a href="https://beejay079.github.io/Pathfinder/" class="btn btn-sm btn-primary">Live Demo</a>
+                  <a href="./img/path.png" class="btn btn-sm btn-primary">View</a>
                 </div>
               </div>
             </div>
           </div>
+          
         </div>
       </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact-section">
-      <div class="container">
+    <div class="container">
         <h2 class="section-title text-white">Contact Me</h2>
-        <div class="row g-4">
-          <div class="col-lg-6">
-            <div class="contact-form">
-              <form id="contactForm">
-                <div class="mb-3">
-                  <label for="name" class="form-label text-white">Name</label>
-                  <input type="text" class="form-control" id="name" required />
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="mb-3">
+                            <label for="name" class="form-label text-white">Fullname</label>
+                            <input type="text" class="form-control" id="name" required placeholder="enter your fullname"/>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label text-white">Email</label>
+                            <input
+                                type="email"
+                                class="form-control"
+                                id="email"
+                                required placeholder="yourname@gmail.com"/>
+                        </div>
+                        <div class="mb-3">
+                            <label for="number" class="form-label text-white">Number</label>
+                            <input type="tel" class="form-control" id="number" required  placeholder="+234 915 140 9162"/>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label text-white"
+                                >Message</label
+                            >
+                            <textarea
+                                class="form-control"
+                                id="message"
+                                rows="5"
+                                required placeholder="message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">
+                            Send Message
+                        </button>
+                    </form>
                 </div>
-                <div class="mb-3">
-                  <label for="email" class="form-label text-white">Email</label>
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="email"
-                    required />
-                </div>
-                <div class="mb-3">
-                  <label for="message" class="form-label text-white"
-                    >Message</label
-                  >
-                  <textarea
-                    class="form-control"
-                    id="message"
-                    rows="5"
-                    required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary w-100">
-                  Send Message
-                </button>
-              </form>
             </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="contact-info text-white">
-              <h3 class="mb-4">Get In Touch</h3>
-              <div class="mb-4">
-                <h5>
-                  <i
-                    class="fas fa-envelope me-2"
-                    style="color: var(--secondary)"></i>
-                  Email
-                </h5>
-                <p>abdulhameedfawas@gmail.com</p>
-              </div>
-              <div class="mb-4">
-                <h5>
-                  <i
-                    class="fas fa-phone me-2"
-                    style="color: var(--secondary)"></i>
-                  Phone
-                </h5>
-                <p>+2349151409162 | +2349063943279</p>
-              </div>
-              <div class="mb-4">
-                <h5>
-                  <i
-                    class="fas fa-map-marker-alt me-2"
-                    style="color: var(--secondary)"></i>
-                  Location
-                </h5>
-                <p>Nigeria</p>
-              </div>
-              <div class="social-links">
-                <h5 class="mb-3">Connect With Me</h5>
-                <a href="#" class="social-icon"
-                  ><i class="fab fa-github"></i
-                ></a>
-                <a href="#" class="social-icon"
-                  ><i class="fab fa-linkedin"></i
-                ></a>
-                <a href="#" class="social-icon"
-                  ><i class="fab fa-whatsapp"></i
-                ></a>
-              </div>
+            <div class="col-lg-6">
+                <div class="contact-info text-white">
+                    <h3 class="mb-4">Get In Touch</h3>
+                    <div class="mb-4">
+                        <h5>
+                            <i
+                                class="fas fa-envelope me-2"
+                                style="color: var(--secondary)"></i>
+                            Email
+                        </h5>
+                        <p>abdulhameedfawas@gmail.com</p>
+                    </div>
+                    <div class="mb-4">
+                        <h5>
+                            <i
+                                class="fas fa-phone me-2"
+                                style="color: var(--secondary)"></i>
+                            Phone
+                        </h5>
+                        <p>+2349151409162 | +2349063943279</p>
+                    </div>
+                    <div class="mb-4">
+                        <h5>
+                            <i
+                                class="fas fa-map-marker-alt me-2"
+                                style="color: var(--secondary)"></i>
+                            Location
+                        </h5>
+                        <p>Nigeria</p>
+                    </div>
+                    <div class="social-links">
+                        <h5 class="mb-3">Connect With Me</h5>
+                        <a href="#" class="social-icon"
+                            ><i class="fab fa-github"></i
+                        ></a>
+                        <a href="#" class="social-icon"
+                            ><i class="fab fa-linkedin"></i
+                        ></a>
+                        <a href="#" class="social-icon"
+                            ><i class="fab fa-whatsapp"></i
+                        ></a>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-    </section>
+    </div>
+</section>
 
     <!-- Footer -->
     <footer class="footer">
@@ -761,9 +438,10 @@ body {
         <p>Full Stack Developer | Frontend & Backend Expert</p>
       </div>
     </footer>
+
     <!-- Bootstrap JS -->
-    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
-    <!-- Custom JS -->
-    <script src="./js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="./javaScript/main.js"></script>
   </body>
 </html>
