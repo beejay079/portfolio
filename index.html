@@ -5,17 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Dev – Portfolio of Abdulhameed Fawas Jayeola</title>
     <!-- Bootstrap 5 CSS -->
-    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
     <!-- Font Awesome for icons -->
     <link
-      rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <!-- Google Fonts -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@300;400;600;700&display=swap"rel="stylesheet" />
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet" />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./Css/main.css" />
   </head>
   <body>
+    <div id="successModal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <div class="success-icon">✓</div>
+        <h2 class="modal-title">Message Sent Successfully!</h2>
+        <p class="modal-message" id="modalMessage"></p>
+        <button id="closeModalBtn">Close</button>
+      </div>
+    </div>
+
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
       <div class="container">
@@ -67,7 +79,9 @@
           <div class="col-lg-8 mx-auto text-center">
             <h1 class="hero-title">Full Stack Developer</h1>
             <p class="hero-subtitle">
-              A creative Full Stack Developer | Frontend & Backend Expert helping businesses grow with visually stunning and functional design
+              A creative Full Stack Developer | Frontend & Backend Expert
+              helping businesses grow with visually stunning and functional
+              design
             </p>
             <p class="hero-subtitle">
               Full Stack Developer | 2+ Years Experience
@@ -195,7 +209,8 @@
               <div class="p-4">
                 <h4>Orbit RestoBar</h4>
                 <p>
-                  A comprehensive online platform for food ordering and delivery.
+                  A comprehensive online platform for food ordering and
+                  delivery.
                 </p>
                 <div class="mb-3">
                   <span class="project-tech">HTML5</span>
@@ -204,8 +219,14 @@
                   <span class="project-tech">JavaScript</span>
                 </div>
                 <div class="d-flex gap-2">
-                  <a href="https://beejay079.github.io/Orbit.RestoBar/" class="btn btn-sm btn-primary">Live Demo</a>
-                  <a href="./img/Orbit.png" class="btn btn-sm btn-primary">View</a>
+                  <a
+                    href="https://beejay079.github.io/Orbit.RestoBar/"
+                    class="btn btn-sm btn-primary"
+                    >Live Demo</a
+                  >
+                  <a href="./img/Orbit.png" class="btn btn-sm btn-primary"
+                    >View</a
+                  >
                 </div>
               </div>
             </div>
@@ -221,7 +242,8 @@
               <div class="p-4">
                 <h4>Medilab Project</h4>
                 <p>
-                  A medical website provides reliable health information, services, and tools to support patient care, education.
+                  A medical website provides reliable health information,
+                  services, and tools to support patient care, education.
                 </p>
                 <div class="mb-3">
                   <span class="project-tech">HTML5</span>
@@ -230,8 +252,14 @@
                   <span class="project-tech">JavaScript</span>
                 </div>
                 <div class="d-flex gap-2">
-                  <a href="https://beejay079.github.io/Medilab/" class="btn btn-sm btn-primary">Live Demo</a>
-                  <a href="./img/med.png" class="btn btn-sm btn-primary">View</a>
+                  <a
+                    href="https://beejay079.github.io/Medilab/"
+                    class="btn btn-sm btn-primary"
+                    >Live Demo</a
+                  >
+                  <a href="./img/med.png" class="btn btn-sm btn-primary"
+                    >View</a
+                  >
                 </div>
               </div>
             </div>
@@ -247,7 +275,8 @@
               <div class="p-4">
                 <h4>Ilanding Project</h4>
                 <p>
-                  iLanding is a smart website builder that helps users create fast, responsive, and professional landing pages
+                  iLanding is a smart website builder that helps users create
+                  fast, responsive, and professional landing pages
                 </p>
                 <div class="mb-3">
                   <span class="project-tech">HTML5</span>
@@ -256,8 +285,14 @@
                   <span class="project-tech">JavaScript</span>
                 </div>
                 <div class="d-flex gap-2">
-                  <a href="https://beejay079.github.io/Ilanding/" class="btn btn-sm btn-primary">Live Demo</a>
-                  <a href="./img/iland.png" class="btn btn-sm btn-primary">View</a>
+                  <a
+                    href="https://beejay079.github.io/Ilanding/"
+                    class="btn btn-sm btn-primary"
+                    >Live Demo</a
+                  >
+                  <a href="./img/iland.png" class="btn btn-sm btn-primary"
+                    >View</a
+                  >
                 </div>
               </div>
             </div>
@@ -266,15 +301,12 @@
           <!-- Project 4 -->
           <div class="col-lg-4 col-md-6">
             <div class="project-card">
-              <img
-                src="./img/quiz.png"
-                alt="Quiz App"
-                class="project-img" />
+              <img src="./img/quiz.png" alt="Quiz App" class="project-img" />
               <div class="p-4">
                 <h4>Quiz App</h4>
                 <p>
-                  Interactive quiz application with real-time feedback and user authentication.
-                  authentication.
+                  Interactive quiz application with real-time feedback and user
+                  authentication. authentication.
                 </p>
                 <div class="mb-3">
                   <span class="project-tech">HTML5</span>
@@ -283,15 +315,21 @@
                   <span class="project-tech">JavaScript</span>
                 </div>
                 <div class="d-flex gap-2">
-                  <a href="https://beejay079.github.io/Quiz-/" class="btn btn-sm btn-primary">Live Demo</a>
-                  <a href="./img/quiz.png" class="btn btn-sm btn-primary">View</a>
+                  <a
+                    href="https://beejay079.github.io/Quiz-/"
+                    class="btn btn-sm btn-primary"
+                    >Live Demo</a
+                  >
+                  <a href="./img/quiz.png" class="btn btn-sm btn-primary"
+                    >View</a
+                  >
                 </div>
               </div>
             </div>
           </div>
 
           <!-- Project 5 -->
-           <div class="col-lg-4 col-md-6">
+          <div class="col-lg-4 col-md-6">
             <div class="project-card">
               <img
                 src=" ./img/cal.png"
@@ -300,7 +338,8 @@
               <div class="p-4">
                 <h4>Calculator Scientific</h4>
                 <p>
-                  A scientific calculator with advanced mathematical and logical functions.
+                  A scientific calculator with advanced mathematical and logical
+                  functions.
                 </p>
                 <div class="mb-3">
                   <span class="project-tech">HTML5</span>
@@ -309,24 +348,28 @@
                   <span class="project-tech">JavaScript</span>
                 </div>
                 <div class="d-flex gap-2">
-                  <a href="https://beejay079.github.io/Calculator/" class="btn btn-sm btn-primary">Live Demo</a>
-                  <a href="./img/cal.png" class="btn btn-sm btn-primary">View</a>
+                  <a
+                    href="https://beejay079.github.io/Calculator/"
+                    class="btn btn-sm btn-primary"
+                    >Live Demo</a
+                  >
+                  <a href="./img/cal.png" class="btn btn-sm btn-primary"
+                    >View</a
+                  >
                 </div>
               </div>
             </div>
           </div>
-          
+
           <!-- Project 6 -->
           <div class="col-lg-4 col-md-6">
             <div class="project-card">
-              <img
-                src="./img/path.png"
-                alt="Pathfinder"
-                class="project-img" />
+              <img src="./img/path.png" alt="Pathfinder" class="project-img" />
               <div class="p-4">
                 <h4>Pathfinder</h4>
                 <p>
-                    Online reservation system featuring calendar integration, real-time availability, and secure payment processing.
+                  Online reservation system featuring calendar integration,
+                  real-time availability, and secure payment processing.
                 </p>
                 <div class="mb-3">
                   <span class="project-tech">HTML5</span>
@@ -335,104 +378,125 @@
                   <span class="project-tech">JavaScript</span>
                 </div>
                 <div class="d-flex gap-2">
-                  <a href="https://beejay079.github.io/Pathfinder/" class="btn btn-sm btn-primary">Live Demo</a>
-                  <a href="./img/path.png" class="btn btn-sm btn-primary">View</a>
+                  <a
+                    href="https://beejay079.github.io/Pathfinder/"
+                    class="btn btn-sm btn-primary"
+                    >Live Demo</a
+                  >
+                  <a href="./img/path.png" class="btn btn-sm btn-primary"
+                    >View</a
+                  >
                 </div>
               </div>
             </div>
           </div>
-          
         </div>
       </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact-section">
-    <div class="container">
+      <div class="container">
         <h2 class="section-title text-white">Contact Me</h2>
         <div class="row">
-            <div class="col-lg-6">
-                <div class="contact-form">
-                    <form id="contactForm">
-                        <div class="mb-3">
-                            <label for="name" class="form-label text-white">Fullname</label>
-                            <input type="text" class="form-control" id="name" required placeholder="enter your fullname"/>
-                        </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label text-white">Email</label>
-                            <input
-                                type="email"
-                                class="form-control"
-                                id="email"
-                                required placeholder="yourname@gmail.com"/>
-                        </div>
-                        <div class="mb-3">
-                            <label for="number" class="form-label text-white">Number</label>
-                            <input type="tel" class="form-control" id="number" required  placeholder="+234 915 140 9162"/>
-                        </div>
-                        <div class="mb-3">
-                            <label for="message" class="form-label text-white"
-                                >Message</label
-                            >
-                            <textarea
-                                class="form-control"
-                                id="message"
-                                rows="5"
-                                required placeholder="message"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary w-100">
-                            Send Message
-                        </button>
-                    </form>
+          <div class="col-lg-6">
+            <div class="contact-form">
+              <form id="contactForm">
+                <div class="mb-3">
+                  <label for="name" class="form-label text-white"
+                    >Fullname</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    required
+                    placeholder="enter your fullname" />
                 </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="contact-info text-white">
-                    <h3 class="mb-4">Get In Touch</h3>
-                    <div class="mb-4">
-                        <h5>
-                            <i
-                                class="fas fa-envelope me-2"
-                                style="color: var(--secondary)"></i>
-                            Email
-                        </h5>
-                        <p>abdulhameedfawas@gmail.com</p>
-                    </div>
-                    <div class="mb-4">
-                        <h5>
-                            <i
-                                class="fas fa-phone me-2"
-                                style="color: var(--secondary)"></i>
-                            Phone
-                        </h5>
-                        <p>+2349151409162 | +2349063943279</p>
-                    </div>
-                    <div class="mb-4">
-                        <h5>
-                            <i
-                                class="fas fa-map-marker-alt me-2"
-                                style="color: var(--secondary)"></i>
-                            Location
-                        </h5>
-                        <p>Nigeria</p>
-                    </div>
-                    <div class="social-links">
-                        <h5 class="mb-3">Connect With Me</h5>
-                        <a href="#" class="social-icon"
-                            ><i class="fab fa-github"></i
-                        ></a>
-                        <a href="#" class="social-icon"
-                            ><i class="fab fa-linkedin"></i
-                        ></a>
-                        <a href="#" class="social-icon"
-                            ><i class="fab fa-whatsapp"></i
-                        ></a>
-                    </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label text-white">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    required
+                    placeholder="yourname@gmail.com" />
                 </div>
+                <div class="mb-3">
+                  <label for="number" class="form-label text-white"
+                    >Number</label
+                  >
+                  <input
+                    type="tel"
+                    class="form-control"
+                    id="number"
+                    required
+                    placeholder="+234 915 140 9162" />
+                </div>
+                <div class="mb-3">
+                  <label for="message" class="form-label text-white"
+                    >Message</label
+                  >
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    rows="5"
+                    required
+                    placeholder="message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">
+                  Send Message
+                </button>
+              </form>
             </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="contact-info text-white">
+              <h3 class="mb-4">Get In Touch</h3>
+              <div class="mb-4">
+                <h5>
+                  <i
+                    class="fas fa-envelope me-2"
+                    style="color: var(--secondary)"></i>
+                  Email
+                </h5>
+                <p>abdulhameedfawas@gmail.com</p>
+              </div>
+              <div class="mb-4">
+                <h5>
+                  <i
+                    class="fas fa-phone me-2"
+                    style="color: var(--secondary)"></i>
+                  Phone
+                </h5>
+                <p>+2349151409162 | +2349063943279</p>
+              </div>
+              <div class="mb-4">
+                <h5>
+                  <i
+                    class="fas fa-map-marker-alt me-2"
+                    style="color: var(--secondary)"></i>
+                  Location
+                </h5>
+                <p>Nigeria</p>
+              </div>
+              <div class="social-links">
+                <h5 class="mb-3">Connect With Me</h5>
+                <a href="#" class="social-icon"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <a href="#" class="social-icon"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+                <a href="#" class="social-icon"
+                  ><i class="fab fa-whatsapp"></i
+                ></a>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
     <!-- Footer -->
     <footer class="footer">
