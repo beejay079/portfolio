@@ -19,6 +19,22 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
   const number = document.getElementById("number").value;
   const message = document.getElementById("message").value;
 
+  emailjs
+    .send("service_novaujw", "template_qjh8vf9", {
+      name: name,
+      email: email,
+      number: number,
+      message: message,
+    })
+    .then(
+      (response) => {
+        console.log("Email sent successfully:", response);
+      },
+      (error) => {
+        console.error("Error sending email:", error);
+      }
+    );
+
   // Prepare success message
   const successMessage = `Thank you, ${name}! Your message has been sent successfully. I'll get back to you at ${email} soon.`;
 
